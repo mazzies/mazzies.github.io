@@ -4,6 +4,11 @@
 
 body {
   image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;          /* Firefox */
+  image-rendering: -o-crisp-edges;            /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+  -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
   background-color: #8bea8b;
   background-image: url('../images/cloud.png');
 	background-position: top;
